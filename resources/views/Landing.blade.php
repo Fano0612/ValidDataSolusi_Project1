@@ -12,7 +12,9 @@
             .navbar-brand.Logo {
                 display: none;
             }
+
         }
+
         .navbar-nav .nav-link.active {
             text-decoration: none;
             color: darkgreen;
@@ -22,7 +24,7 @@
         .navbar-nav .nav-link.active::before {
             content: "";
             display: block;
-            width: 100%;
+            width: 46px;
             height: 3px;
             background-color: darkgreen;
             position: absolute;
@@ -37,31 +39,50 @@
         .navbar-nav .nav-link:hover {
             color: mintcream;
         }
+
         .navbar-nav .nav-link.active:hover {
             text-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
         }
-          .background-video {
+
+        #video-background {
             position: fixed;
             top: 0;
+            right: 0;
+            bottom: 0;
             left: 0;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            filter: blur(10px); 
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        #video-background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+        }
+
+        nav.bg-black {
+            background-color: #79AC78 !important;
         }
     </style>
 </head>
 
 <body>
-<video class="background-video" autoplay loop muted>
-        <source src="https://www.youtube.com/watch?v=tRDzriLk5MA" type="video/mp4">
 
-    </video>
+    <div id="video-background">
+        <video autoplay muted loop>
+            <source src="{{asset('storage/Media/GreenBG.mp4')}}" type="video/mp4">
+
+        </video>
+    </div>
+
     <div class="mx-auto p-5">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="rounded container-fluid" style="background-color: #79AC78;">
+        <nav class="rounded navbar navbar-expand-lg bg-body-tertiary bg-black">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
