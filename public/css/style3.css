@@ -1,0 +1,150 @@
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon,
+.Account-icon {
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-top: -90px;
+    margin-bottom: 10px;
+}
+
+.rectangle {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    border-radius: 50px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.rectangle .content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rectangle img.point-icon {
+    width: 80px;
+    height: 70px;
+}
+
+.rectangle h3.points-text {
+    margin-top: 15px;
+}
+
+.text {
+    display: flex;
+    align-items: left;
+}
+
+.text p {
+    margin: 0 20px;
+}
+
+.c1,
+.c2,
+.c3 {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+    .center-container {
+        margin-top: -40px;
+        margin-bottom: 10px;
+    }
+    .rectangle {
+        width: 100%;
+        max-width: 800px;
+        padding: 10px;
+    }
+    .rectangle img.point-icon {
+        width: 60px;
+        height: 50px;
+    }
+    .rectangle h3.points-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .text {
+        margin-left: 10px;
+    }
+    .text p {
+        margin: 0 10px;
+    }
+    .c1,
+    .c2,
+    .c3 {
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0px 20px;
+    ;
+}
+
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0px 20px;
+    ;
+}
+
+.card {
+    margin: 10px;
+    flex: 0 0 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    display: inline-block;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.Rectangular-shape {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: 8px 8px 16px 16px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container2,
+.cards-container3 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: -20px;
+}
+
+.list-group-item,
+.card-body {
+    border: none;
+}

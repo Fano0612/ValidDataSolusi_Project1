@@ -38,7 +38,7 @@
     <div class="mx-auto p-5" style=" z-index: 2;">
         <nav class="rounded navbar navbar-expand-lg bg-body-tertiary bg-black">
             <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand Logo" href="{{route ('Landing')}}">
+                <a class="navbar-brand Logo" href="{{route ('Landing')}}" >
                     <img class="rounded" src="https://images.squarespace-cdn.com/content/v1/5eac426f629a1c2ac6cdb029/ec18de8f-1c31-43c4-a635-d35729fa9f26/Points.-Grey.png" alt="" style="height:50px; width:auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

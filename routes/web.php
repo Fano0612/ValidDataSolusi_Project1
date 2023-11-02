@@ -14,27 +14,38 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('', function () {
-    return view('Landing');
+    return view('LandingPage');
 });
 
-Route::get('/Landing', function () {
-    return view('Landing');
-})->name('Landing');
-Route::get('/Landing2', function () {
-    return view('Landing2');
-})->name('Landing2');
-
-
+Route::get('/LandingPage', function () {
+    return view('LandingPage');
+})->name('LandingPage');
 Route::get('/Chat', function () {
     return view('Chat');
 })->name('Chat');
+Route::get('/Order', function () {
+    return view('Order');
+})->name('Order');
+Route::get('/Promo', function () {
+    return view('Promo');
+})->name('Promo');
 
-Route::get('/Help', function () {
-    return view('Help');
-})->name('Help');
+// Route::get('/Landing', function () {
+//     return view('Landing');
+// })->name('Landing');
+// Route::get('/Landing2', function () {
+//     return view('Landing2');
+// })->name('Landing2');
+// Route::get('/Chat', function () {
+//     return view('Chat');
+// })->name('Chat');
 
-Route::get('/Promotion', function () {
-    return view('Promotion');
-})->name('Promotion');
+// Route::get('/Help', function () {
+//     return view('Help');
+// })->name('Help');
+
+// Route::get('/Promotion', function () {
+//     return view('Promotion');
+// })->name('Promotion');
 
 

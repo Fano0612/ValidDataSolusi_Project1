@@ -18,15 +18,58 @@
 </head>
 
 <body>
-    
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-bottom:1px solid black;">
-  <div class="container-fluid">
-	
-    <h1>Chat</h1>
-   
-  </div>
-</nav>
+    <a id="sttbutton"></a>
 
+    <div id="video-background">
+        <video autoplay muted loop>
+            <source src="{{asset('storage/Media/GreenBG.mp4')}}" type="video/mp4">
+
+        </video>
+    </div>
+
+
+
+
+    <div class="mx-auto p-5" style=" z-index: 2;">
+        <nav class="rounded navbar navbar-expand-lg bg-body-tertiary bg-black">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand Logo" href="{{route ('Landing')}}">
+                    <img class="rounded" src="https://images.squarespace-cdn.com/content/v1/5eac426f629a1c2ac6cdb029/ec18de8f-1c31-43c4-a635-d35729fa9f26/Points.-Grey.png" alt="" style="height:50px; width:auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="{{route ('Landing')}}" data-text="Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route ('Promotion')}}">Promotion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page href="{{route ('Chat')}}">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route ('Help')}}">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <div class="rounded-image" style="position: relative; background-color: black; margin-left:20px; border-radius: 50%; width:70px; height:70px;">
+                    <img class="rounded" src="https://cdn-icons-png.flaticon.com/512/4086/4086679.png" alt="" style="margin-top: 10px; margin-left: 10px; height: 50px; width: auto; cursor: pointer;">
+                    <div class="dropdown-menu" style="display: none; position: absolute; background-color: #D0E7D2; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; right: 0; top: 100%;">
+                        <div class="dropdown-item"><a href="#" style="color:black">MVPAccount</a></div>
+                        <div class="dropdown-item"><a href="#" style="color:black">Sign Out</a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <div class="container mb-5" style="background-color: rgba(255,255,255,0.7); border-radius: 50px; padding-top:20px;padding-bottom:0px;padding-right:0px;padding-left:0px;">
     <div class="d-flex align-items-center">
@@ -299,43 +342,119 @@
 
 
     <footer>
+        <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h3>BE THE FIRST TO KNOW</h3>
+                        <p>Get all the latest information on MVP Services, Events,
+                            and Fairs. Sign up now to be our member today.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <form class="newsletter">
+                            <input type="text" placeholder="Email Address">
+                            <button class="newsletter_submit_btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
 
-        <div class="Rectangular-shape">
-            <div class="container text-center">
-                <div class="row row-cols-1 row-cols-md-4">
-                    <div class="col">
-                        <div class="p-3">
-                            <a href="{{route ('LandingPage')}}" style="color:black; ">
-                                <img src="https://i.etsystatic.com/22467704/r/il/33f015/2535134244/il_570xN.2535134244_i9fm.jpg" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="col-md-12">
+                            <div class="standard_social_links">
+                                <div>
+                                    <li class="round-btn btn-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
 
-                                <h6>Home</h6>
-                            </a>
+                                    </li>
+                                    <li class="round-btn btn-linkedin"><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class="round-btn btn-twitter"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class="round-btn btn-instagram"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class="round-btn btn-whatsapp"><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+                                    </li>
+                                    <li class="round-btn btn-envelop"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+                                    </li>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Promos</h6>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3">
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/orders-icon.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Orders</h6>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="p-3">
-                            <a href="{{route ('Chat')}}" style="color:black;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrttccJUspUL8QvXb4q38GZdvxeixsWhh6tQ&usqp=CAU" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Chat</h6>
-                            </a>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12">
+                            <h3 style="text-align: right;">Stay Connected</h3>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="second_class">
+                <div class="container second_class_bdr">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
 
+                            <div class="footer-logo"><img src="https://images.squarespace-cdn.com/content/v1/5eac426f629a1c2ac6cdb029/ec18de8f-1c31-43c4-a635-d35729fa9f26/Points.-Grey.png" alt="logo" style="height:50px; width:auto;">
+                            </div>
+                            <p>MVP Club is a website that provides users with the opportunity to redeem their accumulated points for a variety of enticing promotions.</p>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <h3>Quick LInks</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Home</a>
+                                </li>
+                                <li><a href="#">About us</a>
+                                </li>
+                                <li><a href="#">MVP Partners</a>
+                                </li>
+                                <li><a href="#">Contact Us</a>
+                                </li>
+                                <li><a href="#" target="_blank">Terms &amp; Conditions</a>
+                                </li>
+                                <li><a href="#" target="_blank">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>OUR SERVICES</h3>
+                            <ul class="footer-category">
+                                <li><a href="#">Become Tenants</a>
+                                </li>
+                                <li><a href="#">Coupon Redeem</a>
+                                </li>
+                                <li><a href="#">Games</a>
+                                </li>
+                                <li><a href="#">Market Location</a>
+                                </li>
+                                <li><a href="#">Buy Points</a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <h3>MVP Events</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">MVP Summit 2024 @Jakarta Convention Center</a>
+                                </li>
+
+                                <li><a href="#">MVP Tenants &AMP; Market Fair 2024</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="container-fluid">
+                    <div class="copyright"> Copyright 2023 | All Rights Reserved by PT. Valid Data Solusi.</div>
+                </div>
+
+            </div>
         </div>
+
     </footer>
 
 
