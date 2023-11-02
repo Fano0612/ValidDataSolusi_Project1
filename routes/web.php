@@ -16,3 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('', function () {
     return view('Landing');
 });
+
+Route::get('/Landing', function () {
+    return view('Landing');
+})->name('Landing');
+Route::get('/Landing2', function () {
+    return view('Landing2');
+})->name('Landing2');
+
+
+Route::get('/Chat', function () {
+    return view('Chat');
+})->name('Chat');
+
+Route::get('/Help', function () {
+    return view('Help');
+})->name('Help');
+
+Route::get('/Promotion', function () {
+    return view('Promotion');
+})->name('Promotion');
+
+

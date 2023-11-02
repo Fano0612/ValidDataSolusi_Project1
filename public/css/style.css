@@ -6,9 +6,29 @@ section {
     justify-content: center;
 }
 
+.navbar-toggler {
+    display: block;
+}
+
 @media (max-width: 767px) {
     .navbar-brand.Logo {
         display: none;
+    }
+    .navbar-nav .nav-link.active {
+        text-decoration: none;
+        color: darkgreen;
+        position: relative;
+        z-index: 2;
+        font-weight: bold;
+    }
+    .navbar-nav .nav-link.active:hover::before {
+        background-color: mintcream;
+    }
+    .navbar-nav .nav-link:hover {
+        color: mintcream;
+    }
+    .navbar-nav .nav-link.active:hover {
+        text-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
     }
 }
 
@@ -20,16 +40,8 @@ section {
     font-weight: bold;
 }
 
-.navbar-nav .nav-link.active:hover::before {
-    background-color: mintcream;
-}
-
 .navbar-nav .nav-link:hover {
     color: mintcream;
-}
-
-.navbar-nav .nav-link.active:hover {
-    text-shadow: 0 0 10px rgba(0, 128, 0, 0.7);
 }
 
 #video-background {
@@ -287,9 +299,7 @@ footer .newsletter .newsletter_submit_btn {
     float: right;
     margin-top: -48px;
     right: 15px;
-    /* Move the button 3px to the left */
     top: 5px;
-    /* Adjust the margin-top value as needed */
 }
 
 footer .second_class_bdr {
@@ -493,30 +503,92 @@ a {
     align-items: center;
 }
 
-.back-to-top,
-.back-to-bottom {
+#sttbutton {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    background-color: #007bff;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#sttbutton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
     color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+}
+
+#sttbutton:hover {
     cursor: pointer;
-    display: none;
+    background-color: #333;
 }
 
-.back-to-top:hover,
-.back-to-bottom:hover {
-    background-color: #0056b3;
+#sttbutton:active {
+    background-color: #555;
 }
 
+#sttbutton.show {
+    opacity: 1;
+    visibility: visible;
+}
 
-/* Style for the back-to-bottom button */
+@media (min-width: 500px) {
+    #sttbutton {
+        margin: 30px;
+    }
+}
 
-.back-to-bottom {
-    bottom: 70px;
-    /* Adjust the distance from the bottom as needed */
+.caption-background {
+    background: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    #recipeCarousel .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    #recipeCarousel .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item.active,
+#recipeCarousel .carousel-inner .carousel-item-next,
+#recipeCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    #recipeCarousel .carousel-inner .carousel-item-right.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+    #recipeCarousel .carousel-inner .carousel-item-left.active,
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item-right,
+#recipeCarousel .carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+.card.card-body {
+    border: none;
+    box-shadow: none;
 }
