@@ -13,22 +13,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chatstyle.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
+        .navbar {
+            margin-top: 0;
+            border-bottom: 1px solid black;
+            background-color: white;
+        }
+    </style>
 
 </head>
 
 <body>
-    
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="border-bottom:1px solid black;">
-  <div class="container-fluid">
-	
-    <h1>Promo</h1>
-   
-  </div>
-</nav>
+    <div id="video-background">
+        <video autoplay muted loop>
+            <source src="{{asset('storage/Media/ComingSoon.mp4')}}" type="video/mp4">
+
+        </video>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <h1>Promo</h1>
+
+        </div>
+    </nav>
 
 
+    <div style="height:1000px;">
 
+    </div>
 
 
 
@@ -48,21 +66,25 @@
                     </div>
                     <div class="col">
                         <div class="p-3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                        <a href="{{route ('Promo')}}" style="color:black;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCL8sC1ui9gsZBpb6T0RyTRIGmg1o2SmLaw&usqp=CAU" class="card-img-top" alt="" style="width:auto; height: 50px;">
                             <h6>Promos</h6>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="p-3">
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/orders-icon.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                        <a href="{{route ('Order')}}" style="color:black;">
+                            <img src="https://w7.pngwing.com/pngs/268/827/png-transparent-computer-icons-collegest-order-icon-cdr-angle-text.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
                             <h6>Orders</h6>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="p-3">
                             <a href="{{route ('Chat')}}" style="color:black;">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrttccJUspUL8QvXb4q38GZdvxeixsWhh6tQ&usqp=CAU" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Chat</h6>
+                                <img src="https://cdn-icons-png.flaticon.com/512/3593/3593684.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                                <h6>Chat</h6>
                             </a>
                         </div>
                     </div>
@@ -71,7 +93,6 @@
 
         </div>
     </footer>
-
 
 
 

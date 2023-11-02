@@ -158,7 +158,7 @@
         <div class="card mx-auto col-md-3" style="max-width: 100px; border:none; ">
             <img src="https://cdn-icons-png.flaticon.com/512/152/152529.png" class="card-img-top" alt="" style="width:auto; height:70px; margin-top:20px; border-radius:20px;">
             <div class="card-body">
-                <p class="card-text" >More</p>
+                <p class="card-text">More</p>
             </div>
         </div>
 
@@ -512,7 +512,7 @@
                 <div class="row row-cols-1 row-cols-md-4">
                     <div class="col">
                         <div class="p-3">
-                            <a href="{{route ('LandingPage')}}">
+                            <a href="{{route ('LandingPage')}}" style="color:black;">
                                 <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
 
                                 <h6>Home</h6>
@@ -521,25 +521,25 @@
                     </div>
                     <div class="col">
                         <div class="p-3">
-                        <a href="{{route ('Promo')}}">
-                            <img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Promos</h6>
+                            <a href="{{route ('Promo')}}" style="color:black;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                                <h6>Promos</h6>
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="p-3">
-                        <a href="{{route ('Order')}}">
-                            <img src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/orders-icon.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Orders</h6>
+                            <a href="{{route ('Order')}}" style="color:black;">
+                                <img src="https://w7.pngwing.com/pngs/268/827/png-transparent-computer-icons-collegest-order-icon-cdr-angle-text.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                                <h6>Orders</h6>
                             </a>
                         </div>
                     </div>
                     <div class="col">
                         <div class="p-3">
-                            <a href="{{route ('Chat')}}">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3593/3593684.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                            <h6>Chat</h6>
+                            <a href="{{route ('Chat')}}" style="color:black;">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3593/3593684.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+                                <h6>Chat</h6>
                             </a>
                         </div>
                     </div>
