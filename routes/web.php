@@ -36,9 +36,7 @@ Route::get('/Promo', function () {
 // Route::get('/Landing2', function () {
 //     return view('Landing2');
 // })->name('Landing2');
-// Route::get('/Chat', function () {
-//     return view('Chat');
-// })->name('Chat');
+
 
 
 
