@@ -44,8 +44,5 @@ Route::get('/Promo', function () {
 //     return view('Help');
 // })->name('Help');
 
-// Route::get('/Promotion', function () {
-//     return view('Promotion');
-// })->name('Promotion');
 
 
