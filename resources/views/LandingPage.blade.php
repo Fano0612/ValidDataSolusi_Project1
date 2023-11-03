@@ -523,7 +523,7 @@
                         <div class="p-3">
                             <a href="{{route ('Promo')}}" style="color:black;">
                                 <img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-                                <h6>Promos</h6>
+                                <h6>Promo</h6>
                             </a>
                         </div>
                     </div>
