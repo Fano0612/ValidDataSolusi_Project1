@@ -321,7 +321,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col" >
 						<div class="p-3">
 							<img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
 							<h6>Promos</h6>
