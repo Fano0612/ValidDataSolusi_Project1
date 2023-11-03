@@ -29,15 +29,3 @@ Route::get('/Order', function () {
 Route::get('/Promo', function () {
     return view('Promo');
 })->name('Promo');
-
-// Route::get('/Landing', function () {
-//     return view('Landing');
-// })->name('Landing');
-// Route::get('/Landing2', function () {
-//     return view('Landing2');
-// })->name('Landing2');
-
-
-
-
-
