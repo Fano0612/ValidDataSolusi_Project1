@@ -40,9 +40,6 @@ Route::get('/Promo', function () {
 //     return view('Chat');
 // })->name('Chat');
 
-// Route::get('/Help', function () {
-//     return view('Help');
-// })->name('Help');
 
 
 
