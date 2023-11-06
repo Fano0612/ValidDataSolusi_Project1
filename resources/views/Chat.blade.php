@@ -321,16 +321,20 @@
 							</a>
 						</div>
 					</div>
-					<div class="col" >
+					<div class="col">
 						<div class="p-3">
-							<img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-							<h6>Promos</h6>
+							<a href="{{route ('Promo')}}" style="color:black; ">
+								<img src="https://cdn-icons-png.flaticon.com/512/272/272535.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+								<h6>Promos</h6>
+							</a>
 						</div>
 					</div>
 					<div class="col">
 						<div class="p-3">
-							<img src="https://w7.pngwing.com/pngs/268/827/png-transparent-computer-icons-collegest-order-icon-cdr-angle-text.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
-							<h6>Orders</h6>
+							<a href="{{route ('Order')}}" style="color:black; ">
+								<img src="https://w7.pngwing.com/pngs/268/827/png-transparent-computer-icons-collegest-order-icon-cdr-angle-text.png" class="card-img-top" alt="" style="width:auto; height: 50px;">
+								<h6>Orders</h6>
+							</a>
 						</div>
 					</div>
 					<div class="col">
@@ -346,6 +350,7 @@
 
 		</div>
 	</footer>
+
 
 
 
